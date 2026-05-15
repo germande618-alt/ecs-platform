@@ -622,5 +622,6 @@ function Page({ title, eyebrow, children }) {
       </div>
       {children}
     </section>
+    </>
   );
 }
