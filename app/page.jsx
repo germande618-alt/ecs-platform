@@ -121,6 +121,19 @@ useEffect(() => {
   }
 
   return (
+    <>
+  {telegramUser && (
+    <div
+      style={{
+        padding: "10px",
+        background: "#111",
+        color: "white",
+        borderBottom: "1px solid #333",
+      }}
+    >
+      Telegram: @{telegramUser.username}
+    </div>
+  )}
     <div className="app-shell" data-game={game}>
       <aside className="sidebar">
         <div className="brand">
