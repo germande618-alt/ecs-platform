@@ -17,6 +17,17 @@ function formatNumber(value) {
 }
 
 export default function HomePage() {
+  useEffect(() => {
+  if (window.Telegram?.WebApp) {
+    const tg = window.Telegram.WebApp;
+
+    tg.ready();
+
+    tg.expand();
+
+    console.log("Telegram User:", tg.initDataUnsafe?.user);
+  }
+}, []);
   const [game, setGame] = useState("cs2");
   const [view, setView] = useState("dashboard");
   const [selectedPlayerId, setSelectedPlayerId] = useState(1);
