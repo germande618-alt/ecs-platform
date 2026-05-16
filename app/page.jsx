@@ -121,7 +121,7 @@ useEffect(() => {
   }
 
     return (
-    <div>
+    <div className="telegram-wrapper">
 
       {telegramUser && (
         <div
