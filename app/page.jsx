@@ -501,7 +501,7 @@ function TournamentCode({ tournament, registeredTournamentId, register }) {
         <strong>{isRegistered ? tournament.code : "LOCKED"}</strong>
         <button className="secondary-action" onClick={() => register(tournament.id)}>{isRegistered ? "Код получен" : "Получить код"}</button>
       </div>
-   </>
+    </>
   );
 }
 
